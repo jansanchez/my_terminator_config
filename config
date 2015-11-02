@@ -1,45 +1,22 @@
 [global_config]
-  title_transmit_bg_color = "#414141"
+  title_transmit_bg_color = "#545454"
+  title_inactive_fg_color = "#484848"
 [keybindings]
 [profiles]
   [[default]]
-    background_image = None
+    use_system_font = False
     background_darkness = 0.98
     background_type = transparent
-    foreground_color = "#f2f2f2"
+    background_image = None
     show_titlebar = False
-    background_color = "#333333"
+    font = Ubuntu Mono 13
+    background_color = "#293135"
 [layouts]
   [[default]]
-    [[[child0]]]
-      position = 0:25
-      type = Window
-      order = 0
-      parent = ""
-      size = 1364, 688
     [[[child1]]]
-      position = 801
-      type = HPaned
-      order = 0
-      parent = child0
-    [[[child3]]]
-      position = 344
-      type = VPaned
-      order = 1
-      parent = child1
-    [[[terminal2]]]
-      profile = default
       type = Terminal
-      order = 0
-      parent = child1
-    [[[terminal5]]]
-      profile = default
-      type = Terminal
-      order = 1
-      parent = child3
-    [[[terminal4]]]
-      profile = default
-      type = Terminal
-      order = 0
-      parent = child3
+      parent = window0
+    [[[window0]]]
+      type = Window
+      parent = ""
 [plugins]
